@@ -1,0 +1,48 @@
+$logo-total-max-width: 557 // hacked value
+
+.slight-logo-container
+  +calc-responsive-width($logo-total-max-width, 996)
+  text-align: center
+  margin: 0 auto
+  display: block
+
+.slight-logo-letter
+  +transition(all 500ms)
+  +opacity(100)
+
+.slight-logo-alt
+  +transition(all 500ms)
+  +opacity(0)
+  position: absolute
+  left: 0
+  top: 0
+
+.slight-logo-letter-wrapper
+  position: relative
+  display: inline-block
+  &:hover
+    .slight-logo-letter
+      +opacity(0)
+    .slight-logo-alt
+      +opacity(100)
+
+.slight-logo-wrapper-hoverOff
+  .slight-logo-letter
+    +animation(fade-in 3s)
+  .slight-logo-alt
+    +animation(fade-out 3s)
+
+.slight-logo-letter-wrapper-1
+  +calc-responsive-width(41, $logo-total-max-width)
+.slight-logo-letter-wrapper-2
+  +calc-responsive-width(36, $logo-total-max-width)
+.slight-logo-letter-wrapper-3
+  +calc-responsive-width(24, $logo-total-max-width)
+.slight-logo-letter-wrapper-4
+  +calc-responsive-width(41, $logo-total-max-width)
+.slight-logo-letter-wrapper-5
+  +calc-responsive-width(43, $logo-total-max-width)
+.slight-logo-letter-wrapper-6
+  +calc-responsive-width(44, $logo-total-max-width)
+.slight-logo-letter-wrapper-7
+  +calc-responsive-width(304, $logo-total-max-width)
